@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ruslan+Display" rel="stylesheet">
+    <title>Star Trivia!</title>
+</head>
+
+<body>
+    <header>Test your knowledge of the cosmos</header>
+    <button id="begin">Begin</button>
+    
+    <div id="questionWrapper">
+        <div id="timerDiv">00:00</div>
+        <form id="Q1">What is the name of this constellation?
+            <br>
+            <img id="questImage" src="assets/images/orion.jpg">
+            <br>
+            <input type="radio" name="q1Answer">Mark
+            <input type="radio" name="q1Answer">Steve
+            <input type="radio" name="q1Answer">Joe
+            <input type="radio" name="q1Answer">Bob
+        </form>
+        <hr>
+        <form id="Q2">Which star is the arrow pointing toward?
+            <br>
+            <img id="questImage" src="assets/images/north-star.jpg">
+            <br>
+            <input type="radio" name="q2Answer">Mark
+            <input type="radio" name="q2Answer">Steve
+            <input type="radio" name="q2Answer">Joe
+            <input type="radio" name="q2Answer">Bob
+        </form>
+        <hr>
+        <form id="Q3">
+                <br>
+                <img id="questImage" >
+                <br>
+                <input type="radio" name="q3Answer">Mark
+                <input type="radio" name="q3Answer">Steve
+                <input type="radio" name="q3Answer">Joe
+                <input type="radio" name="q3Answer">Bob
+            </form>
+        <hr>
+        <form id="Q4">
+                <br>
+                <img id="questImage" >
+                <br>
+                <input type="radio" name="q4Answer">Mark
+                <input type="radio" name="q4Answer">Steve
+                <input type="radio" name="q4Answer">Joe
+                <input type="radio" name="q4Answer">Bob
+            </form>
+        <hr>
+        <form id="Q5">
+                <br>
+                <img id="questImage" >
+                <br>
+                <input type="radio" name="q5Answer">Mark
+                <input type="radio" name="q5Answer">Steve
+                <input type="radio" name="q5Answer">Joe
+                <input type="radio" name="q5Answer">Bob
+            </form>
+        <hr>
+        <form id="Q6">
+                <br>
+                <img id="questImage" >
+                <br>
+                <input type="radio" name="q6Answer">Mark
+                <input type="radio" name="q6Answer">Steve
+                <input type="radio" name="q6Answer">Joe
+                <input type="radio" name="q6Answer">Bob
+            </form>
+        <hr>
+        <form id="Q7">
+                <br>
+                <img id="questImage" >
+                <br>
+                <input type="radio" name="q7Answer">Mark
+                <input type="radio" name="q7Answer">Steve
+                <input type="radio" name="q7Answer">Joe
+                <input type="radio" name="q7Answer">Bob
+            </form>
+        <hr>
+        <form id="Q8">
+                <br>
+                <img id="questImage" >
+                <br>
+                <input type="radio" name="q8Answer">Mark
+                <input type="radio" name="q8Answer">Steve
+                <input type="radio" name="q8Answer">Joe
+                <input type="radio" name="q8Answer">Bob
+            </form>
+        <hr>
+        <form id="Q9">
+                <br>
+                <img id="questImage" >
+                <br>
+                <input type="radio" name="q9Answer">Mark
+                <input type="radio" name="q9Answer">Steve
+                <input type="radio" name="q9Answer">Joe
+                <input type="radio" name="q9Answer">Bob
+            </form>
+        <hr>
+        <form id="Q10">
+                <br>
+                <img id="questImage" >
+                <br>
+                <input type="radio" name="q10Answer">Mark
+                <input type="radio" name="q10Answer">Steve
+                <input type="radio" name="q10Answer">Joe
+                <input type="radio" name="q10Answer">Bob
+            </form>
+        <input type="submit" id="submit" value="Submit Answers">
+    </div>
+
+    <footer>
+        <a href="#">Copyright info</a>
+    </footer>
+    <script>
+
+        $("#begin").click(function () {
+            $("#questionWrapper").show();
+            $("#begin").hide();
+        });
+
+    </script>
+</body>
+
+</html>

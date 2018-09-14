@@ -1,0 +1,25 @@
+html {
+    width: 1080px;
+    height: 100%;
+    background-image: url(../images/forest-stars-background.jpg);
+    font-family: 'Ruslan Display', cursive;
+    color: #ffffff;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+#questionWrapper {
+    display: none;
+    text-align:center;
+    font-size: 30px;
+}
+#questImage {
+    height:300px;
+    width:500px;
+}
+footer {
+    text-align: center;
+    text-decoration: none;
+}
