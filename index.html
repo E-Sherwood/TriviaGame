@@ -6,129 +6,165 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ruslan+Display" rel="stylesheet">
-    <title>Star Trivia!</title>
+    <title>Cosmic Trivia!</title>
 </head>
 
 <body>
-    <header>Test your knowledge of the cosmos</header>
+    <header id="header">Test your knowledge of the cosmos</header>
     <button id="begin">Begin</button>
-    
-    <div id="questionWrapper">
-        <div id="timerDiv">00:00</div>
-        <form id="Q1">What is the name of this constellation?
+    <div id="timerDiv">00:00</div>
+    <form id="questionWrapper">
+
+        <div id="Q1">What is the name of this constellation?
             <br>
             <img id="questImage" src="assets/images/orion.jpg">
             <br>
-            <input type="radio" name="q1Answer">Mark
-            <input type="radio" name="q1Answer">Steve
-            <input type="radio" name="q1Answer">Joe
-            <input type="radio" name="q1Answer">Bob
-        </form>
+            <input type="radio" name="q1Answer" value="a">Cygnus
+            <br>
+            <input type="radio" name="q1Answer" value="b">Orion
+            <br>
+            <input type="radio" name="q1Answer" value="c">Draco
+            <br>
+            <input type="radio" name="q1Answer" value="d">Bob
+        </div>
         <hr>
-        <form id="Q2">Which star is the arrow pointing toward?
+        <div id="Q2">Which star is the arrow pointing toward?
             <br>
             <img id="questImage" src="assets/images/north-star.jpg">
             <br>
-            <input type="radio" name="q2Answer">Mark
-            <input type="radio" name="q2Answer">Steve
-            <input type="radio" name="q2Answer">Joe
-            <input type="radio" name="q2Answer">Bob
-        </form>
+            <input type="radio" name="q2Answer" value="a">Polaris
+            <br>
+            <input type="radio" name="q2Answer" value="b">Sirius
+            <br>
+            <input type="radio" name="q2Answer" value="c">Rigel
+            <br>
+            <input type="radio" name="q2Answer" value="d">Betelgeus
+        </div>
         <hr>
-        <form id="Q3">
-                <br>
-                <img id="questImage" >
-                <br>
-                <input type="radio" name="q3Answer">Mark
-                <input type="radio" name="q3Answer">Steve
-                <input type="radio" name="q3Answer">Joe
-                <input type="radio" name="q3Answer">Bob
-            </form>
+        <div id="Q3">What Zodiac sign is attributed to this constellation?
+            <br>
+            <img id="questImage" src="assets/images/Leo.jpg">
+            <br>
+            <input type="radio" name="q3Answer" value="a">Taurus
+            <br>
+            <input type="radio" name="q3Answer" value="b">Leo
+            <br>
+            <input type="radio" name="q3Answer" value="c">Libra
+            <br>
+            <input type="radio" name="q3Answer" value="d">Virgo
+        </div>
         <hr>
-        <form id="Q4">
-                <br>
-                <img id="questImage" >
-                <br>
-                <input type="radio" name="q4Answer">Mark
-                <input type="radio" name="q4Answer">Steve
-                <input type="radio" name="q4Answer">Joe
-                <input type="radio" name="q4Answer">Bob
-            </form>
+        <div id="Q4">Who wrote the <em>Almagest</em>, the most studied astronomical treatise?
+            <br>
+            <img id="questImage" src="assets/images/ptolemy.jpg">
+            <br>
+            <input type="radio" name="q4Answer" value="a">Galileo
+            <br>
+            <input type="radio" name="q4Answer" value="b">Aristotle
+            <br>
+            <input type="radio" name="q4Answer" value="c">Ptolemy
+            <br>
+            <input type="radio" name="q4Answer" value="d">Homer
+        </div>
         <hr>
-        <form id="Q5">
-                <br>
-                <img id="questImage" >
-                <br>
-                <input type="radio" name="q5Answer">Mark
-                <input type="radio" name="q5Answer">Steve
-                <input type="radio" name="q5Answer">Joe
-                <input type="radio" name="q5Answer">Bob
-            </form>
+        <div id="Q5">What did the Ancient Greeks name the Moon?
+            <br>
+            <img id="questImage" src="assets/images/moon-phases.png">
+            <br>
+            <input type="radio" name="q5Answer" value="a">Selene
+            <br>
+            <input type="radio" name="q5Answer" value="b">Ganymede
+            <br>
+            <input type="radio" name="q5Answer" value="c">Luna
+            <br>
+            <input type="radio" name="q5Answer" value="d">Titan
+        </div>
         <hr>
-        <form id="Q6">
-                <br>
-                <img id="questImage" >
-                <br>
-                <input type="radio" name="q6Answer">Mark
-                <input type="radio" name="q6Answer">Steve
-                <input type="radio" name="q6Answer">Joe
-                <input type="radio" name="q6Answer">Bob
-            </form>
+        <div id="Q6">Name this constellation
+            <br>
+            <img id="questImage" src="assets/images/scorpio.png">
+            <br>
+            <input type="radio" name="q6Answer" value="a">Cancer
+            <br>
+            <input type="radio" name="q6Answer" value="b">Scorpio
+            <br>
+            <input type="radio" name="q6Answer" value="c">Aquarius
+            <br>
+            <input type="radio" name="q6Answer" value="d">Toothbrush
+        </div>
         <hr>
-        <form id="Q7">
-                <br>
-                <img id="questImage" >
-                <br>
-                <input type="radio" name="q7Answer">Mark
-                <input type="radio" name="q7Answer">Steve
-                <input type="radio" name="q7Answer">Joe
-                <input type="radio" name="q7Answer">Bob
-            </form>
+        <div id="Q7">Mars was named after the Roman god of --?
+            <br>
+            <img id="questImage2" src="assets/images/mars.jpg">
+            <br>
+            <input type="radio" name="q7Answer" value="a">Wine
+            <br>
+            <input type="radio" name="q7Answer" value="b">Music
+            <br>
+            <input type="radio" name="q7Answer" value="c">Art
+            <br>
+            <input type="radio" name="q7Answer" value="d">War
+        </div>
         <hr>
-        <form id="Q8">
-                <br>
-                <img id="questImage" >
-                <br>
-                <input type="radio" name="q8Answer">Mark
-                <input type="radio" name="q8Answer">Steve
-                <input type="radio" name="q8Answer">Joe
-                <input type="radio" name="q8Answer">Bob
-            </form>
+        <div id="Q8">Who is credited for inventing the first telescope?
+            <br>
+            <img id="questImage" src="assets/images/telescope.jpg">
+            <br>
+            <input type="radio" name="q8Answer" value="a">Hans Lippershey
+            <br>
+            <input type="radio" name="q8Answer" value="b">Galileo Galilei
+            <br>
+            <input type="radio" name="q8Answer" value="c">Philo Taylor Farnsworth
+            <br>
+            <input type="radio" name="q8Answer" value="d">Neil Degrasse Tyson
+        </div>
         <hr>
-        <form id="Q9">
-                <br>
-                <img id="questImage" >
-                <br>
-                <input type="radio" name="q9Answer">Mark
-                <input type="radio" name="q9Answer">Steve
-                <input type="radio" name="q9Answer">Joe
-                <input type="radio" name="q9Answer">Bob
-            </form>
-        <hr>
-        <form id="Q10">
-                <br>
-                <img id="questImage" >
-                <br>
-                <input type="radio" name="q10Answer">Mark
-                <input type="radio" name="q10Answer">Steve
-                <input type="radio" name="q10Answer">Joe
-                <input type="radio" name="q10Answer">Bob
-            </form>
-        <input type="submit" id="submit" value="Submit Answers">
-    </div>
+    </form>
+    <button id="submit">Submit</button>
 
     <footer>
         <a href="#">Copyright info</a>
     </footer>
     <script>
+        //  var gameTimer = setInterval(countdown, 1000)
+        //  function countdown(){
 
+        //  }
         $("#begin").click(function () {
             $("#questionWrapper").show();
             $("#begin").hide();
+            $("#header").hide();
         });
+        $("#submit").click(function () {
+            var score = 0;
+            var numberOfQuestions = 8;
+            var answerArray = ["b", "a", "b", "c", "a", "b", "d", "a"];
 
+            var q1 = document.forms["questionWrapper"]["q1Answer"].value;
+            var q2 = document.forms["questionWrapper"]["q2Answer"].value;
+            var q3 = document.forms["questionWrapper"]["q3Answer"].value;
+            var q4 = document.forms["questionWrapper"]["q4Answer"].value;
+            var q5 = document.forms["questionWrapper"]["q5Answer"].value;
+            var q6 = document.forms["questionWrapper"]["q6Answer"].value;
+            var q7 = document.forms["questionWrapper"]["q7Answer"].value;
+            var q8 = document.forms["questionWrapper"]["q8Answer"].value;
+
+            for (x = 1; x <= numberOfQuestions; x++) {
+                if (eval("q" + x) == "") {
+                    alert("missed a question test" + x);
+                }
+            }
+            for (x = 1; x <= numberOfQuestions; x++) {
+                if (eval("q" + x) == answerArray[x - 1]) {
+                    score++;
+                }
+            }
+            console.log(score);
+
+        })
     </script>
 </body>
 

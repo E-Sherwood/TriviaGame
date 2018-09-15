@@ -3,7 +3,7 @@ html {
     height: 100%;
     background-image: url(../images/forest-stars-background.jpg);
     font-family: 'Ruslan Display', cursive;
-    color: #ffffff;
+    color: yellow;
     text-shadow:
 		-1px -1px 0 #000,
 		1px -1px 0 #000,
@@ -19,7 +19,29 @@ html {
     height:300px;
     width:500px;
 }
+#questImage2 {
+    height:300px;
+    width:400px;
+}
 footer {
     text-align: center;
     text-decoration: none;
+    color: #ffffff;
+}
+header {
+    font-size: 45px;
+    text-align: center;
+}
+#begin {
+    margin-left: 480px;
+    padding: 10px;
+    font-family: 'Ruslan Display', cursive;
+   font-size: 25px;
+   margin-bottom: 10px;
+}
+#submit {
+    padding: 10px;
+    font-family: 'Ruslan Display', cursive;
+   font-size: 25px;
+   margin-bottom: 10px;
 }
