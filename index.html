@@ -9,136 +9,152 @@
     <script src="assets/javascript/app.js"></script>
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ruslan+Display" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/star-icon.ico">
     <title>Cosmic Trivia!</title>
 </head>
 
 <body>
     <header id="header">Test your knowledge of the cosmos</header>
     <button id="begin">Begin</button>
-    <div id="timerDiv">00:00</div>
+    <div id="timerDiv"></div>
     <form id="questionWrapper">
 
         <div id="Q1">What is the name of this constellation?
             <br>
             <img id="questImage" src="assets/images/orion.jpg">
             <br>
-            <input type="radio" name="q1Answer" value="a">Cygnus
+            <input type="radio" name="q1Answer" value="a" style="height:18px; width:18px;">Cygnus
             <br>
-            <input type="radio" name="q1Answer" value="b">Orion
+            <input type="radio" name="q1Answer" value="b" style="height:18px; width:18px;">Orion
             <br>
-            <input type="radio" name="q1Answer" value="c">Draco
+            <input type="radio" name="q1Answer" value="c" style="height:18px; width:18px;">Draco
             <br>
-            <input type="radio" name="q1Answer" value="d">Bob
+            <input type="radio" name="q1Answer" value="d" style="height:18px; width:18px;">Bob
         </div>
         <hr>
         <div id="Q2">Which star is the arrow pointing toward?
             <br>
             <img id="questImage" src="assets/images/north-star.jpg">
             <br>
-            <input type="radio" name="q2Answer" value="a">Polaris
+            <input type="radio" name="q2Answer" value="a" style="height:18px; width:18px;">Polaris
             <br>
-            <input type="radio" name="q2Answer" value="b">Sirius
+            <input type="radio" name="q2Answer" value="b" style="height:18px; width:18px;">Sirius
             <br>
-            <input type="radio" name="q2Answer" value="c">Rigel
+            <input type="radio" name="q2Answer" value="c" style="height:18px; width:18px;">Rigel
             <br>
-            <input type="radio" name="q2Answer" value="d">Betelgeus
+            <input type="radio" name="q2Answer" value="d" style="height:18px; width:18px;">Betelgeus
         </div>
         <hr>
         <div id="Q3">What Zodiac sign is attributed to this constellation?
             <br>
             <img id="questImage" src="assets/images/Leo.jpg">
             <br>
-            <input type="radio" name="q3Answer" value="a">Taurus
+            <input type="radio" name="q3Answer" value="a" style="height:18px; width:18px;">Taurus
             <br>
-            <input type="radio" name="q3Answer" value="b">Leo
+            <input type="radio" name="q3Answer" value="b" style="height:18px; width:18px;">Leo
             <br>
-            <input type="radio" name="q3Answer" value="c">Libra
+            <input type="radio" name="q3Answer" value="c" style="height:18px; width:18px;">Libra
             <br>
-            <input type="radio" name="q3Answer" value="d">Virgo
+            <input type="radio" name="q3Answer" value="d" style="height:18px; width:18px;">Virgo
         </div>
         <hr>
         <div id="Q4">Who wrote the <em>Almagest</em>, the most studied astronomical treatise?
             <br>
             <img id="questImage" src="assets/images/ptolemy.jpg">
             <br>
-            <input type="radio" name="q4Answer" value="a">Galileo
+            <input type="radio" name="q4Answer" value="a" style="height:18px; width:18px;">Galileo
             <br>
-            <input type="radio" name="q4Answer" value="b">Aristotle
+            <input type="radio" name="q4Answer" value="b" style="height:18px; width:18px;">Aristotle
             <br>
-            <input type="radio" name="q4Answer" value="c">Ptolemy
+            <input type="radio" name="q4Answer" value="c" style="height:18px; width:18px;">Ptolemy
             <br>
-            <input type="radio" name="q4Answer" value="d">Homer
+            <input type="radio" name="q4Answer" value="d" style="height:18px; width:18px;">Homer
         </div>
         <hr>
         <div id="Q5">What did the Ancient Greeks name the Moon?
             <br>
             <img id="questImage" src="assets/images/moon-phases.png">
             <br>
-            <input type="radio" name="q5Answer" value="a">Selene
+            <input type="radio" name="q5Answer" value="a" style="height:18px; width:18px;">Selene
             <br>
-            <input type="radio" name="q5Answer" value="b">Ganymede
+            <input type="radio" name="q5Answer" value="b" style="height:18px; width:18px;">Ganymede
             <br>
-            <input type="radio" name="q5Answer" value="c">Luna
+            <input type="radio" name="q5Answer" value="c" style="height:18px; width:18px;">Luna
             <br>
-            <input type="radio" name="q5Answer" value="d">Titan
+            <input type="radio" name="q5Answer" value="d" style="height:18px; width:18px;">Titan
         </div>
         <hr>
         <div id="Q6">Name this constellation
             <br>
             <img id="questImage" src="assets/images/scorpio.png">
             <br>
-            <input type="radio" name="q6Answer" value="a">Cancer
+            <input type="radio" name="q6Answer" value="a" style="height:18px; width:18px;">Cancer
             <br>
-            <input type="radio" name="q6Answer" value="b">Scorpio
+            <input type="radio" name="q6Answer" value="b" style="height:18px; width:18px;">Scorpio
             <br>
-            <input type="radio" name="q6Answer" value="c">Aquarius
+            <input type="radio" name="q6Answer" value="c" style="height:18px; width:18px;">Aquarius
             <br>
-            <input type="radio" name="q6Answer" value="d">Toothbrush
+            <input type="radio" name="q6Answer" value="d" style="height:18px; width:18px;">Toothbrush
         </div>
         <hr>
         <div id="Q7">Mars was named after the Roman god of --?
             <br>
             <img id="questImage2" src="assets/images/mars.jpg">
             <br>
-            <input type="radio" name="q7Answer" value="a">Wine
+            <input type="radio" name="q7Answer" value="a" style="height:18px; width:18px;">Wine
             <br>
-            <input type="radio" name="q7Answer" value="b">Music
+            <input type="radio" name="q7Answer" value="b" style="height:18px; width:18px;">Music
             <br>
-            <input type="radio" name="q7Answer" value="c">Art
+            <input type="radio" name="q7Answer" value="c" style="height:18px; width:18px;">Art
             <br>
-            <input type="radio" name="q7Answer" value="d">War
+            <input type="radio" name="q7Answer" value="d" style="height:18px; width:18px;">War
         </div>
         <hr>
         <div id="Q8">Who is credited for inventing the first telescope?
             <br>
             <img id="questImage" src="assets/images/telescope.jpg">
             <br>
-            <input type="radio" name="q8Answer" value="a">Hans Lippershey
+            <input type="radio" name="q8Answer" value="a" style="height:18px; width:18px;">Hans Lippershey
             <br>
-            <input type="radio" name="q8Answer" value="b">Galileo Galilei
+            <input type="radio" name="q8Answer" value="b" style="height:18px; width:18px;">Galileo Galilei
             <br>
-            <input type="radio" name="q8Answer" value="c">Philo Taylor Farnsworth
+            <input type="radio" name="q8Answer" value="c" style="height:18px; width:18px;">Philo Taylor Farnsworth
             <br>
-            <input type="radio" name="q8Answer" value="d">Neil Degrasse Tyson
+            <input type="radio" name="q8Answer" value="d" style="height:18px; width:18px;">Neil Degrasse Tyson
         </div>
         <hr>
     </form>
-    <button id="submit">Submit</button>
-
+    <button id="submit" onclick=clearInterval(gameTimer)>Submit</button>
+    <button id="tryAgain" onclick=clearInterval(gameTimer)>Try Again</button>
+    <div id="total"></div>
     <footer>
         <a href="#">Copyright info</a>
     </footer>
     <script>
-        //  var gameTimer = setInterval(countdown, 1000)
-        //  function countdown(){
 
-        //  }
+        var counter = 10;
+
+
         $("#begin").click(function () {
             $("#questionWrapper").show();
             $("#begin").hide();
             $("#header").hide();
+            $("#submit").show();
+            var gameTimer = setInterval(countDown, 1000);
         });
-        $("#submit").click(function () {
+        var countDown = function () {
+            if (counter === 0) {
+                submit();
+                clearInterval(gameTimer);
+            };
+            if (counter > 0) {
+                counter--;
+                $("#timerDiv").html("Time left: " + counter);
+                console.log(counter);
+            };
+        };
+        function submit() {
+            clearInterval(gameTimer);
             var score = 0;
             var numberOfQuestions = 8;
             var answerArray = ["b", "a", "b", "c", "a", "b", "d", "a"];
@@ -153,18 +169,102 @@
             var q8 = document.forms["questionWrapper"]["q8Answer"].value;
 
             for (x = 1; x <= numberOfQuestions; x++) {
-                if (eval("q" + x) == "") {
-                    alert("missed a question test" + x);
-                }
-            }
-            for (x = 1; x <= numberOfQuestions; x++) {
                 if (eval("q" + x) == answerArray[x - 1]) {
-                    score++;
+                    score++
                 }
             }
-            console.log(score);
+            //console.log(score);
+            if (q1 == answerArray[0]) {
+                document.getElementById("Q1").style = "color: green";
+            }
+            else {
+                document.getElementById("Q1").style = "color: red";
+            }
+            if (q2 == answerArray[1]) {
+                document.getElementById("Q2").style = "color: green";
+            }
+            else {
+                document.getElementById("Q2").style = "color: red";
+            }
+            if (q3 == answerArray[2]) {
+                document.getElementById("Q3").style = "color: green";
+            }
+            else {
+                document.getElementById("Q3").style = "color: red";
+            }
+            if (q4 == answerArray[3]) {
+                document.getElementById("Q4").style = "color: green";
+            }
+            else {
+                document.getElementById("Q4").style = "color: red";
+            }
+            if (q5 == answerArray[4]) {
+                document.getElementById("Q5").style = "color: green";
+            }
+            else {
+                document.getElementById("Q5").style = "color: red";
+            }
+            if (q6 == answerArray[5]) {
+                document.getElementById("Q6").style = "color: green";
+            }
+            else {
+                document.getElementById("Q6").style = "color: red";
+            }
+            if (q7 == answerArray[6]) {
+                document.getElementById("Q7").style = "color: green";
+            }
+            else {
+                document.getElementById("Q7").style = "color: red";
+            }
+            if (q8 == answerArray[7]) {
+                document.getElementById("Q8").style = "color: green";
+            }
+            else {
+                document.getElementById("Q8").style = "color: red";
+            }
+            if (score < 8) {
+                clearInterval(gameTimer);
+                $("#total").html("your score is " + score);
+                //alert("try again");
+                $("#tryAgain").show();
 
-        })
+            }
+            if (score === 8) {
+                clearInterval(gameTimer);
+
+                $("#total").html("nice job!");
+
+            }
+        };
+        $("#submit").click(function () {
+            clearInterval(gameTimer);
+            submit();
+        });
+        var reset = function () {
+            document.getElementById("Q1").style = "color: yellow";
+            document.forms["questionWrapper"]["q1Answer"].value = "";
+            document.getElementById("Q2").style = "color: yellow";
+            document.forms["questionWrapper"]["q2Answer"].value = "";
+            document.getElementById("Q3").style = "color: yellow";
+            document.forms["questionWrapper"]["q3Answer"].value = "";
+            document.getElementById("Q4").style = "color: yellow";
+            document.forms["questionWrapper"]["q4Answer"].value = "";
+            document.getElementById("Q5").style = "color: yellow";
+            document.forms["questionWrapper"]["q5Answer"].value = "";
+            document.getElementById("Q6").style = "color: yellow";
+            document.forms["questionWrapper"]["q6Answer"].value = "";
+            document.getElementById("Q7").style = "color: yellow";
+            document.forms["questionWrapper"]["q7Answer"].value = "";
+            document.getElementById("Q8").style = "color: yellow";
+            document.forms["questionWrapper"]["q8Answer"].value = "";
+            $("#tryAgain").hide();
+            clearInterval(gameTimer);
+            counter = 60;
+        }
+        $("#tryAgain").click(function () {
+            clearInterval(gameTimer);
+            reset();
+        });
     </script>
 </body>
 
