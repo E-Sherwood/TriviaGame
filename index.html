@@ -124,15 +124,15 @@
         </div>
         <hr>
     </form>
-    <button id="submit" onclick=clearInterval(gameTimer)>Submit</button>
-    <button id="tryAgain" onclick=clearInterval(gameTimer)>Try Again</button>
+    <button id="submit">Submit</button>
+    <button id="tryAgain">Try Again</button>
     <div id="total"></div>
     <footer>
         <a href="#">Copyright info</a>
     </footer>
     <script>
-
-        var counter = 10;
+        var gameTimer;
+        var counter = 60;
 
 
         $("#begin").click(function () {
@@ -140,12 +140,13 @@
             $("#begin").hide();
             $("#header").hide();
             $("#submit").show();
-            var gameTimer = setInterval(countDown, 1000);
+            clearInterval(gameTimer);
+            gameTimer = setInterval(countDown, 1000);
         });
         var countDown = function () {
             if (counter === 0) {
                 submit();
-                clearInterval(gameTimer);
+                stop();
             };
             if (counter > 0) {
                 counter--;
@@ -154,7 +155,7 @@
             };
         };
         function submit() {
-            clearInterval(gameTimer);
+        
             var score = 0;
             var numberOfQuestions = 8;
             var answerArray = ["b", "a", "b", "c", "a", "b", "d", "a"];
@@ -223,24 +224,24 @@
                 document.getElementById("Q8").style = "color: red";
             }
             if (score < 8) {
-                clearInterval(gameTimer);
+                stop();
                 $("#total").html("your score is " + score);
-                //alert("try again");
                 $("#tryAgain").show();
 
             }
             if (score === 8) {
-                clearInterval(gameTimer);
-
+                stop();
                 $("#total").html("nice job!");
 
             }
+            $("#total").show();
         };
         $("#submit").click(function () {
-            clearInterval(gameTimer);
+            stop();
             submit();
         });
         var reset = function () {
+            stop();
             document.getElementById("Q1").style = "color: yellow";
             document.forms["questionWrapper"]["q1Answer"].value = "";
             document.getElementById("Q2").style = "color: yellow";
@@ -258,13 +259,23 @@
             document.getElementById("Q8").style = "color: yellow";
             document.forms["questionWrapper"]["q8Answer"].value = "";
             $("#tryAgain").hide();
-            clearInterval(gameTimer);
             counter = 60;
-        }
+            $("#total").hide();
+            run();
+            if ($("#submit").click)(function () {
+                submit();
+        })};
         $("#tryAgain").click(function () {
-            clearInterval(gameTimer);
+            stop();
             reset();
         });
+        function stop (){
+            clearInterval(gameTimer);
+        }
+        function run (){
+            clearInterval(gameTimer);
+            setInterval(countDown, 1000);
+        }
     </script>
 </body>
 

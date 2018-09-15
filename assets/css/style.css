@@ -59,3 +59,7 @@ header {
     text-align:center;
     font-size: 50px;
 }
+#total {
+    font-size: 45px;
+    text-align: center;
+}
